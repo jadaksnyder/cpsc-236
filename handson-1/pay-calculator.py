@@ -14,3 +14,4 @@ print(f"Gross Pay: {grosspay}")
 print(f"Tax Rate: {taxrate}%")
 print(f"Tax Amount: {taxs}")
 print(f"Take Home Pay: {thpay}")
+#i like python
