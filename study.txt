@@ -1,0 +1,15 @@
+cpsc 374 quiz 
+study four major elements of ojbect oriented model/theory
+abstraction-
+encapsulation-is the inclusion within a program object
+of all the resources need for the object to function -
+basically, the methods and the data.
+modularity-
+hierarchy-
+single inheritance - one to one, one to many -> <-
+multiple inheritance- many to one <- ->, means that a subclass 
+can inherit from two or more superclasses
+polymorphism- wherein a name refer to instances of many different
+classes as long as they are related to common superclass
+
+
