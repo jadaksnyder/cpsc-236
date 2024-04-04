@@ -62,7 +62,7 @@ def main():
         command = input("Command: ").lower()
         if command == "view":
             month = input("Three-letter Month: ").lower()
-            if month in sales:
+            if month in sales.keys:
                 print(f"Sales amount for {month} is {sales[month]:,.2f}.")
             else:
                 print("Invalid three-letter month.")
