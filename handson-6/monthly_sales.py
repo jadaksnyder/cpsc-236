@@ -9,17 +9,16 @@ def read_sales():
     sales = {}
     with open(FILENAME, "r") as file:
         for line in file:
-            parts = line.strip().split(' ')
+            parts = line.strip().split(',')
             if len(parts) == 2:
                 month, amount = parts
                 sales[month] = float(amount)
     return sales
 
 
-
 def view(sales):
     month = input("Three-letter Month: ").lower()
-    if month in sales:
+    if month in sales.keys():
         print(f"Sales amount for {month} is {sales[month]:,.2f}.")
     else:
         print("Invalid three-letter month.")
@@ -34,7 +33,7 @@ def view_yearly_summary(sales):
 
 def edit(sales):
     month = input("Three-letter Month: ").lower()
-    if month in sales:
+    if month in sales.keys():
         amount = float(input("Sales Amount: "))
         sales[month] = amount
         write_sales(sales)
@@ -62,7 +61,7 @@ def main():
         command = input("Command: ").lower()
         if command == "view":
             month = input("Three-letter Month: ").lower()
-            if month in sales.keys:
+            if month in sales.keys():
                 print(f"Sales amount for {month} is {sales[month]:,.2f}.")
             else:
                 print("Invalid three-letter month.")
