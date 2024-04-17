@@ -1,10 +1,17 @@
 import os
 import time
 
-board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+# Initializing the board
+board = [' ']*10
 player = 1
 Game = 0
-Mark = 'X'
+
+# Win Flags
+Win = 1
+Draw = -1
+Running = 0
+
+Game = Running
 
 def DrawBoard():
     print(" %c | %c | %c " % (board[1], board[2], board[3]))
@@ -14,45 +21,48 @@ def DrawBoard():
     print(" %c | %c | %c " % (board[7], board[8], board[9]))
     print(" | | ")
 
+
 def CheckPosition(x):
     if board[x] == ' ':
         return True
     else:
         return False
 
+
 def CheckWin():
     global Game
+
     if board[1] == board[2] and board[2] == board[3] and board[1] != ' ':
-        Game = 1
+        Game = Win
     elif board[4] == board[5] and board[5] == board[6] and board[4] != ' ':
-        Game = 1
+        Game = Win
     elif board[7] == board[8] and board[8] == board[9] and board[7] != ' ':
-        Game = 1
+        Game = Win
     elif board[1] == board[4] and board[4] == board[7] and board[1] != ' ':
-        Game = 1
+        Game = Win
     elif board[2] == board[5] and board[5] == board[8] and board[2] != ' ':
-        Game = 1
+        Game = Win
     elif board[3] == board[6] and board[6] == board[9] and board[3] != ' ':
-        Game = 1
+        Game = Win
     elif board[1] == board[5] and board[5] == board[9] and board[5] != ' ':
-        Game = 1
+        Game = Win
     elif board[3] == board[5] and board[5] == board[7] and board[5] != ' ':
-        Game = 1
+        Game = Win
     elif board[1] != ' ' and board[2] != ' ' and board[3] != ' ' and \
             board[4] != ' ' and board[5] != ' ' and board[6] != ' ' and \
             board[7] != ' ' and board[8] != ' ' and board[9] != ' ':
-        Game = -1
+        Game = Draw
     else:
-        Game = 0
+        Game = Running
 
-print("Tic-Tac-Toe Game Designed By Sourabh Somani")
-print("Player 1 [X] --- Player 2 [O]\n")
-print()
-print()
-print("Please Wait...")
+
+print("Wild Tic Tac Toe - Players can choose 'X' or 'O' on each move") #print statement so the player knows they can choose 'x' or 'o'
+print("Player 1's mark: 'X'")
+print("Player 2's mark: 'O'")
+print("\nPlease Wait...")
 time.sleep(3)
 
-while Game == 0:
+while Game == Running:
     os.system('cls')
     DrawBoard()
 
@@ -60,23 +70,25 @@ while Game == 0:
         print("Player 1's chance")
     else:
         print("Player 2's chance")
-    
-    Mark = input("Enter 'X' or 'O' to mark: ").upper()
-    
+
+    mark = input("Enter your mark ('X' or 'O'): ").upper() #player must choose between x or o
+
+    if mark not in ['X', 'O']: # I used an if statement to make sure the player types in x or o
+        print("Invalid input. Please enter 'X' or 'O'")
+        continue
+
     choice = int(input("Enter the position between [1-9] where you want to mark: "))
+    
     if CheckPosition(choice):
-        board[choice] = Mark
+        board[choice] = mark #The board is updated so that the players mark is either x or o, instead of a hardcoded mark based on the player
         player += 1
         CheckWin()
 
     os.system('cls')
     DrawBoard()
 
-    if Game == -1:
+    if Game == Draw:
         print("Game Draw")
-    elif Game == 1:
+    elif Game == Win:
         player -= 1
-        if player % 2 != 0:
-            print("Player 1 Won")
-        else:
-            print("Player 2 Won")
+        print(f"Player {player} Won")
