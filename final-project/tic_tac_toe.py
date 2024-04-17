@@ -1,7 +1,10 @@
 import os
 import time
 
-# Initializing the board
+#My variant of this game will be "wild tic tac toe", this allows players to choose 
+#whether they want to put an "x" or an "o" on each move
+
+
 board = [' ']*10
 player = 1
 Game = 0
