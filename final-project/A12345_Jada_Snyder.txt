@@ -1,0 +1,36 @@
+Student ID: A12345
+First Name: Jada
+Last Name: SNyder
+Score: 2
+Elapsed time: 11.116250991821289
+Quiz questions and answers:
+Question: What does if statement do?
+Correct Answer: B
+Student's answer: A
+Question: Which of the following data types is NOT in Python?
+Correct Answer: C
+Student's answer: A
+Question: Which variable type should data be in before being written to a file?
+Correct Answer: B
+Student's answer: A
+Question: What is an exception?
+Correct Answer: A
+Student's answer: A
+Question: Which of the following is a correct for loop in Python?
+Correct Answer: B
+Student's answer: A
+Question: What is a list?
+Correct Answer: C
+Student's answer: A
+Question: Which of the following Python objects are immutable?
+Correct Answer: B
+Student's answer: A
+Question: What is the function to get user input?
+Correct Answer: A
+Student's answer: A
+Question: When does an IndexError exception occur?
+Correct Answer: B
+Student's answer: A
+Question: Which type of Programming does Python support?
+Correct Answer: C
+Student's answer: A

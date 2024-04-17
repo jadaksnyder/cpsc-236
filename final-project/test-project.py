@@ -1,6 +1,9 @@
 import random
 import time
 import os
+import csv
+import subprocess
+
 
 def get_student_info():
     attempts = 0
@@ -26,13 +29,10 @@ def validate_id(student_id):
     return True
 
 def load_questions(filename):
-    questions = []
-    with open(filename, 'r') as file:
-        lines = file.readlines()
-        for line in lines:
-            question, options, answer = line.strip().split(';')
-            questions.append({'question': question, 'options': options.split(','), 'answer': answer})
-    return questions
+    with open(filename) as file:
+        csv_reader = csv.DictReader(file)
+        
+        return list(csv_reader)
 
 def get_unique_questions(questions, num_questions):
     return random.sample(questions, num_questions)
@@ -87,7 +87,7 @@ def clear_screen():
 def main():
     print("Welcome to the Quiz Maker!")
     first_name, last_name, student_id = get_student_info()
-    questions = load_questions('testbank.xlsx')
+    questions = load_questions('testbank.csv')
     
     while True:
         clear_screen()
@@ -107,10 +107,10 @@ def main():
             print("Invalid option. Please choose again.")
             continue
 
-        #unique_questions = get_unique_questions(questions, num_questions)
-        #answers, elapsed_time = take_quiz(unique_questions)
-        #score = calculate_score(answers, num_questions)
-        #generate_student_file(first_name, last_name, student_id, score, elapsed_time, answers)
+        unique_questions = get_unique_questions(questions, num_questions)
+        answers, elapsed_time = take_quiz(unique_questions)
+        score = calculate_score(answers, num_questions)
+        generate_student_file(first_name, last_name, student_id, score, elapsed_time, answers)
 
         choice = input("\nEnter Q to exit or S to start a new quiz: ").upper()
         if choice == 'Q':

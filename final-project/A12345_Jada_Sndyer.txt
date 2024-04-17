@@ -1,0 +1,36 @@
+Student ID: A12345
+First Name: Jada
+Last Name: Sndyer
+Score: 4
+Elapsed time: 5.144941806793213
+Quiz questions and answers:
+Question: In bash, what file are user passwords stored in?
+Correct Answer: B
+Student's answer: A
+Question: What is the tool to install python modules?
+Correct Answer: A
+Student's answer: A
+Question: What is the and operator in python?
+Correct Answer: A
+Student's answer: A
+Question: How do you add a module to python
+Correct Answer: B
+Student's answer: A
+Question: Which function is non-mutable
+Correct Answer: B
+Student's answer: A
+Question: What does if statement do?
+Correct Answer: B
+Student's answer: A
+Question: Which of the following is a GUI library in Python?
+Correct Answer: A
+Student's answer: A
+Question: True or False: Python requires you to specify the kind of value a function returns (or null for none)
+Correct Answer: B
+Student's answer: A
+Question: What is the function to get user input?
+Correct Answer: A
+Student's answer: A
+Question: Which data type can either be true or false?
+Correct Answer: B
+Student's answer: A

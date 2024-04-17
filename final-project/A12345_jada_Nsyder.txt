@@ -1,0 +1,9 @@
+Student ID: A12345
+First Name: jada
+Last Name: Nsyder
+Score: 0
+Elapsed time: 2.8017470836639404
+Quiz questions and answers:
+Question: What tool is used to crack passwords in Kali Linux?
+Correct Answer: C
+Student's answer: A

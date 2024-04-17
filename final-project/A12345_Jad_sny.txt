@@ -1,0 +1,36 @@
+Student ID: A12345
+First Name: Jad
+Last Name: sny
+Score: 4
+Elapsed time: 14.76070499420166
+Quiz questions and answers:
+Question: What keyword begins a python function block?
+Correct Answer: A
+Student's answer: A
+Question: What does LAN stand for?
+Correct Answer: C
+Student's answer: A
+Question: What does if statement do?
+Correct Answer: B
+Student's answer: A
+Question: Is Python case sensitive when dealing with identifiers?
+Correct Answer: A
+Student's answer: A
+Question: What does UPDATE do in SQL?
+Correct Answer: A
+Student's answer: A
+Question: In the range function of a for loop in python, is the last number inclusive, exclusive, or other?
+Correct Answer: B
+Student's answer: A
+Question: Which variable type should data be in before being written to a file?
+Correct Answer: B
+Student's answer: A
+Question: What do Mutator methods do that Accessor methods do not do?
+Correct Answer: A
+Student's answer: A
+Question: What is a dictionary?
+Correct Answer: C
+Student's answer: A
+Question: what type of variable is X:  X = 8.0
+Correct Answer: C
+Student's answer: A

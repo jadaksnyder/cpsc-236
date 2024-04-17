@@ -1,0 +1,9 @@
+Student ID: A12345
+First Name: jada
+Last Name: Syder
+Score: 1
+Elapsed time: 2.7632198333740234
+Quiz questions and answers:
+Question: What are dictionaries most similar to in other languages?
+Correct Answer: A
+Student's answer: A

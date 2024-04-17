@@ -1,0 +1,24 @@
+Student ID: A13456
+First Name: Jada
+Last Name: Snyder
+Score: 3
+Elapsed time: 71.65692186355591
+Quiz questions and answers:
+Question: True or False: a while statement keeps running while it is true
+Correct Answer: A
+Student's answer: A
+Question: In bash, what file are users recorded in?
+Correct Answer: A
+Student's answer: A
+Question: What langauge is Python built on?
+Correct Answer: B
+Student's answer: A
+Question: In C++, which member function is used to skip one or more characters in the keyboard buffer?
+Correct Answer: B
+Student's answer: A
+Question: What is the tool to install python modules?
+Correct Answer: A
+Student's answer: A
+Question: When does an IndexError exception occur?
+Correct Answer: B
+Student's answer: A
