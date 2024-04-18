@@ -1,0 +1,5 @@
+HOW TO RUN SIMON GAME REVERSION
+
+I was getting an error in Jupyter because it couldn't connect to pygame, but it runs in visual studio code.
+
+Press run without debugging and the game will pop up and run, and will start immediately.
