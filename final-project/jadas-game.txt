@@ -1,0 +1,7 @@
+Tic tac toe game
+Click on the Tic tac toe cell
+Click "Run selected cell"
+My variant of this game will be "wild tic tac toe", this allows players to choose whether they want to put an "x" or an "o" on each move
+Choose X or O, hit enter
+Select which position you want your X or o
+Have fun!
