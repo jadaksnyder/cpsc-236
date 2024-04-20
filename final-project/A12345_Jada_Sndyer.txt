@@ -1,36 +1,36 @@
 Student ID: A12345
 First Name: Jada
 Last Name: Sndyer
-Score: 4
-Elapsed time: 5.144941806793213
+Score: 3
+Elapsed time: 4.968043804168701
 Quiz questions and answers:
-Question: In bash, what file are user passwords stored in?
-Correct Answer: B
-Student's answer: A
-Question: What is the tool to install python modules?
+Question: What is the latest version of Python?
 Correct Answer: A
 Student's answer: A
-Question: What is the and operator in python?
+Question: Which is not a data type in python?
 Correct Answer: A
 Student's answer: A
-Question: How do you add a module to python
+Question: How many bits are in a byte?
 Correct Answer: B
 Student's answer: A
-Question: Which function is non-mutable
+Question: Are strings mutable or immutable?
 Correct Answer: B
 Student's answer: A
-Question: What does if statement do?
-Correct Answer: B
-Student's answer: A
-Question: Which of the following is a GUI library in Python?
+Question: In which year was the Python language developed?
 Correct Answer: A
 Student's answer: A
-Question: True or False: Python requires you to specify the kind of value a function returns (or null for none)
+Question: What is the maximum number of parameters in the range function?
+Correct Answer: C
+Student's answer: A
+Question: Which is not a keyword in Python
+Correct Answer: C
+Student's answer: A
+Question: What does LAN stand for?
+Correct Answer: C
+Student's answer: A
+Question: Which correctly turns a string (with values seperated by a single white space) into a list?
 Correct Answer: B
 Student's answer: A
-Question: What is the function to get user input?
-Correct Answer: A
-Student's answer: A
-Question: Which data type can either be true or false?
+Question: In C++, which member function is used to skip one or more characters in the keyboard buffer?
 Correct Answer: B
 Student's answer: A
